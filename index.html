@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container-fluid   px-0">
+        <div class="row m-0 p-0  ">
+            <h1 id="h1" class="justify-content-center d-flex m-0 p-0 py-3">ALLPICTURES</h1>
+        </div>
+        <div class="row  justify-content-center ">
+            <ul class="row col-12 m-0 p-0  justify-content-center  frist-ul">
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 active">
+                    ALLPICTURES
+                </li>
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 ">BENZ
+                </li>
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 ">BMW
+                </li>
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 ">
+                    TESLA
+                </li>
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 ">
+                    AUDI
+                </li>
+                <li onclick="para(this)" class="carsList col mx-3 fs-3 py-2 d-flex justify-content-center h2 ">
+
+                    ROLLSROYCE
+                </li>
+            </ul>
+
+
+
+            <ul class="row  mt-5   second-ul" id="images">
+
+
+                <li data-cat="AUDI" class="col-4">
+                    <figure class="h-75">
+                        <img src="asset/img/AUDI/Audi e-tron GT.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,000,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Audi e-tron GT</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                <li data-cat="BENZ" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/benz/e200.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">2,100,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">benz-e200</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                <li data-cat="BMW" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/bmw/i4.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">3,100,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">bmw-i4</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                <li data-cat="ROLLSROYCE" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/ROLLS ROYCE/BLACK BADGE.webp" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,334,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">BLACK-BADGE</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="TESLA" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/tesla/Cybertruck.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">2,900,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Cybertruck</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="AUDI" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/AUDI/Audi Q5 Sportback TFSI e.jpg" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">3,487,577</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Audi Q5 Sportback TFSI e</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BENZ" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/benz/gclass.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,934,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">gclass</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BMW" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/bmw/i7.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,290,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">bmw-i7</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="ROLLSROYCE" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/ROLLS ROYCE/CULLINAN.webp" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">3,444,525</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">CULLINAN</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="TESLA" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/tesla/model3.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,000,000</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">model-3</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="AUDI" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/AUDI/Audi R8 Coupé V10 performance RWD.jpg" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,444,765</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Audi R8 Coupé V10 performance RWD</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BENZ" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/benz/s500.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,578,435</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">s-500</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BMW" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/bmw/x3.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,343,567</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">bmw-x3</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="ROLLSROYCE" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/ROLLS ROYCE/GHOST EXTENDED.webp" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">4,654,123</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">GHOST EXTENDED</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="TESLA" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/tesla/Roadster.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,434,781</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Roadster</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="AUDI" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/AUDI/Audi S7 Sportback TDI.jpg" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">2,434,567</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Audi S7 Sportback TDI</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BENZ" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/benz/sls.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">3,545,123</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">benz-sls</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="BMW" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/bmw/x5.jpeg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,435,741</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">bmw-x5</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="ROLLSROYCE" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/ROLLS ROYCE/Phantom.webp" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">2.657,123</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">Phantom</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+                </li>
+                <li data-cat="TESLA" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/tesla/smodel.jpg" alt="" class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">2,435,926</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">s-model</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+
+
+                <li data-cat="BENZ" class="col-4    ">
+                    <figure class="h-75">
+                        <img src="asset/img/benz/cq5dam.web.1280.1280 (1).jpg" alt=""
+                            class="col-12 object-fit-cover h-100 py-3">
+                    </figure>
+
+                    <figcaption class="d-flex h-25 justify-content-between">
+                        <span class="col-6 text-center">
+                            Price: <em class="text-danger">1,534,768</em>
+                        </span>
+                        <span class=" col-6 text-center">
+                            Model: <em class="text-warning text-uppercase">g-class</em>
+                        </span>
+
+                    </figcaption>
+
+
+
+                </li>
+
+
+
+
+
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="asset/js/index.js"></script>
+</body>
+
+</html>

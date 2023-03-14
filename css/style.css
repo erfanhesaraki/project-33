@@ -1,0 +1,59 @@
+.frist-ul li {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  list-style-type: none;
+  position: relative;
+  z-index: 2;
+}
+.frist-ul li::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(45deg);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.frist-ul li:hover::after {
+  width: 91%;
+}
+
+.second-ul li {
+  list-style-type: none;
+  overflow: hidden;
+}
+.second-ul li figure {
+  width: 100%;
+  height: 100%;
+}
+.second-ul li figcaption span {
+  font-size: 25px !important;
+}
+
+.show {
+  height: 550px;
+}
+
+.hide {
+  height: 0px;
+  display: none;
+}
+
+.h {
+  height: 700px;
+}
+
+.h550 {
+  height: 550px;
+}
+
+.active {
+  background-color: #d81518 !important;
+}/*# sourceMappingURL=style.css.map */
